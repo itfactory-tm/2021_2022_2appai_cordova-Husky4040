@@ -11,32 +11,54 @@
 </head>
 <body>
 <header class="navbar-fixed">
-    <nav class="grey">
-        <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo center">Project Cordova</a>
-        </div>
-    </nav>
-</header>
-<main class="container">
-    <div class="row">
-        <p>Custom + overwrite css styles: <b>css/app.css</b></p>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos nihil possimus, quidem
-            recusandae
-            velit! Alias aut deserunt ducimus iusto perspiciatis quam quo repellendus reprehenderit repudiandae
-            similique
-            ut, velit voluptatum!</p>
-        <p>Architecto assumenda consectetur eligendi eveniet facilis impedit in iste, maxime modi molestiae nesciunt non
-            optio praesentium quasi quia rem temporibus totam vitae voluptas voluptate? Amet cum id magnam nostrum
-            quam.</p>
-        <p>Accusantium aliquam consequuntur cumque cupiditate dolore dolorum ea eaque eligendi eos, exercitationem
-            itaque
-            iusto magni maxime minima molestiae molestias neque odio placeat quae, quam quas qui quis sed sunt unde.</p>
+        <nav class="black">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo center orange-text">Yu-Gi-Oh!</a>
+                <a href="#!" data-target="nav-mobile" class="sidenav-trigger show-on-large">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </nav>
     </div>
-</main>
+</header>
+
+<ul id="nav-mobile" class="sidenav">
+    <li><a href="#!" data-show="tabAboutMe"><i class="material-icons">smartphone</i>About me</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabWhoStart"><i class="material-icons">network_check</i>Check who starts</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabLifePoints"><i class="material-icons">my_location</i>LP Tracker</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabCardSearch"><i class="material-icons">my_location</i>Compass</a></li>
+</ul>
+
+<div class="container">
+    <div class="row cooleDiv spa" id="tabAboutMe">
+        <div class="col s4 right-align" style="float:right">
+            <img src="img/Pfp.jpg" alt="ik" class="circle responsive-img">
+        </div>
+        <h3>About me</h3>
+        <p>Mijn naam is Arne Huyskens en ik volg application development en artificial intelligence op Thomas More.</p>
+        <p>Deze app is mijn project voor het vak Cordova. De bedoeling van deze app is om je duel iets makkelijker te maken met behulp van
+        een levenspuntencounter en een manier om te zien wie eerst mag in de duel. Ook kan je bekijken wat de prijs is van een gekozen kaart.</p>
+        <h4>Contacteer mij!</h4>
+        <p>Mail: r0842910@student.thomasmore.be <br><br>GSM <br><a href="sms:+32493672687&body=Hi">Stuur een bericht!</a><br>
+            <a href="tel:+32493672687">Bel mij!</a></p>
+    </div>
+    <div class="row cooleDiv spa" id="tabWhoStart">
+        <p>Filler</p>
+    </div>
+</div>
 <script src="js/jquery.3.5.1min.js"></script>
 <script src="js/materialize.1.0.0.min.js"></script>
 <script src="cordova.js"></script>
 <script defer src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/88f08c29f1.js" crossorigin="anonymous"></script>
 </body>
 </html>
