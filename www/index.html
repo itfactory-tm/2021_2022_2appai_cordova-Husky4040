@@ -23,19 +23,19 @@
 </header>
 
 <ul id="nav-mobile" class="sidenav">
-    <li><a href="#!" data-show="tabAboutMe"><i class="material-icons">smartphone</i>About me</a></li>
+    <li><a href="#!" data-show="tabAboutMe"><i class="fas fa-users"></i>About me</a></li>
     <li>
         <div class="divider"></div>
     </li>
-    <li><a href="#!" data-show="tabWhoStart"><i class="material-icons">network_check</i>Check who starts</a></li>
+    <li><a href="#!" data-show="tabWhoStart"><i class="fas fa-dice"></i>Check who starts</a></li>
     <li>
         <div class="divider"></div>
     </li>
-    <li><a href="#!" data-show="tabLifePoints"><i class="material-icons">my_location</i>LP Tracker</a></li>
+    <li><a href="#!" data-show="tabLifePoints"><i class="fas fa-heartbeat"></i>LP Tracker</a></li>
     <li>
         <div class="divider"></div>
     </li>
-    <li><a href="#!" data-show="tabCardSearch"><i class="material-icons">my_location</i>Compass</a></li>
+    <li><a href="#!" data-show="tabCardSearch"><i class="fas fa-search"></i>Search a card</a></li>
 </ul>
 
 <div class="container">
@@ -54,6 +54,29 @@
     <div class="row cooleDiv spa" id="tabWhoStart">
         <p>Filler</p>
     </div>
+    <div class="row cooleDiv spa" id="tabLifePoints">
+        <p>Filler</p>
+    </div>
+    <div class="row cooleDiv spa" id="tabCardSearch">
+        <h3>Zoek een kaart: </h3>
+        <p>Naam kaart:</p>
+        <input type="textbox" id="kNaam" name="kNaam" class="orange-text">
+        <a class="waves-effect waves-light btn-small btnSearch"><i class="fas fa-search"></i>Search</a> <br> <br>
+        <img id="change-image" src="" alt="Image here" />
+        <h6>Type</h6>
+        <p id="pType"></p>
+        <h6>Beschrijving</h6>
+        <p id="pDesc"></p>
+        <h6>Attack</h6>
+        <p id="pAtk"></p>
+        <h6>Defense</h6>
+        <p id="pDef"></p>
+        <h6>Level/rank</h6>
+        <p id="pLvl"></p>
+        <h6>Prijs</h6>
+        <p id="pPrijs"></p>
+    </div>
+
 </div>
 <script src="js/jquery.3.5.1min.js"></script>
 <script src="js/materialize.1.0.0.min.js"></script>
