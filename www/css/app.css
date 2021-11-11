@@ -28,3 +28,27 @@ a.brand-logo {
 .cooleDiv p, h3, h4 {
     margin-left: 5px;
 }
+
+.tails {
+    width: 125px;
+    height: auto;
+}
+
+.tails2 {
+    width: 125px;
+    height: auto;
+}
+
+.omgekeerd {
+    transform: rotate(180deg);
+}
+
+.dobbel{
+    width:60px;
+    background:white;
+    border:black 1px solid;
+    padding:15px;
+    font-size:20px;
+    text-align:center;
+    margin:5px;
+}

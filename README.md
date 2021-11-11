@@ -15,7 +15,7 @@ Deze app helpt alleen bij het duel, het duel zelf moet je nog steeds in het echt
 De app zal bestaan uit 4 delen. Eerst kom je op de introductiepagina waar je informatie ziet over de app en over mezelf. 
 Daarna kan je kiezen tussen de andere 3 delen van de app. Eén pagina is een pagina om te kijken wie er mag beginnen in het duel. 
 Je kan hier kiezen tussen dobbelen en een munt gooien. Een andere pagina is voor de levenspunten bij te houden, 
-dit werkt met een systeem dat je met knoppen van -1000, -500, -100, -50, -10 en +1000, +500, +100, +50, +10 je levenspunten kan bijhouden tijdens het duel, 
+dit werkt met een systeem dat je doormiddel van een label en een tekstvak je levenspunten kan bijhouden tijdens het duel, 
 dit is namelijk veel gemakkelijker dan het te moeten onthouden. Als iemand levenspunten verliest zal de gsm van de gebruiker met behulp van een plugin ook trillen.
 Het scherm is hierbij opgedeeld in 2 delen zodat beide spelers hun levenspunten kunnen bijhouden. 
 De laatste pagina is een pagina waarbij je door het ingeven van de naam van een kaart de prijs kan zijn van deze kaart.
