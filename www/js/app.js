@@ -44,7 +44,8 @@ $(function(){
         }
     });
 
-    $('.btnLP1').on('click', function () {
+
+    $('.btnLPA1').on('click', function () {
         let currentLP = parseInt($('#labelLP1').text())
         let plusofmin = parseInt($('#txtLP1').val())
 
@@ -54,14 +55,14 @@ $(function(){
                 $('#labelLP1').text(0)
             } else {
                 $('#labelLP1').text(currentLP + plusofmin)
-                navigator.vibrate(500);
+                navigator.vibrate([500]);
             }
         } else {
-            $('#labelLP1').text(currentLP)
+            $('#labelLP2').text(currentLP)
         }
     })
 
-    $('.btnLP2').on('click', function () {
+    $('.btnLPA2').on('click', function () {
         let currentLP = parseInt($('#labelLP2').text())
         let plusofmin = parseInt($('#txtLP2').val())
 
@@ -71,7 +72,41 @@ $(function(){
                 $('#labelLP2').text(0)
             } else {
                 $('#labelLP2').text(currentLP + plusofmin)
-                navigator.vibrate(500);
+                navigator.vibrate([500]);
+            }
+        } else {
+            $('#labelLP2').text(currentLP)
+        }
+    })
+
+    $('.btnLPM1').on('click', function () {
+        let currentLP = parseInt($('#labelLP1').text())
+        let plusofmin = parseInt($('#txtLP1').val())
+
+        if (isFinite(plusofmin)){
+            let resultaat = currentLP - plusofmin
+            if (resultaat < 0){
+                $('#labelLP1').text(0)
+            } else {
+                $('#labelLP1').text(currentLP - plusofmin)
+                navigator.vibrate([500]);
+            }
+        } else {
+            $('#labelLP2').text(currentLP)
+        }
+    })
+
+    $('.btnLPM2').on('click', function () {
+        let currentLP = parseInt($('#labelLP2').text())
+        let plusofmin = parseInt($('#txtLP2').val())
+
+        if (isFinite(plusofmin)){
+            let resultaat = currentLP - plusofmin
+            if (resultaat < 0){
+                $('#labelLP2').text(0)
+            } else {
+                $('#labelLP2').text(currentLP - plusofmin)
+                navigator.vibrate([500]);
             }
         } else {
             $('#labelLP2').text(currentLP)
