@@ -21,6 +21,8 @@ Het scherm is hierbij opgedeeld in 2 delen zodat beide spelers hun levenspunten 
 De laatste pagina is een pagina waarbij je door het ingeven van de naam van een kaart de prijs kan zijn van deze kaart.
 Dit ga ik proberen te doen met behulp van de Yu-Gi-Oh! API door YGOPRODeck.
 
+[Link voor download](https://huskyapp.sinners.be)
+
 ## Plugins used
 
 - [cordova-plugin-vibration](https://www.npmjs.com/package/cordova-plugin-vibration)  
