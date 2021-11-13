@@ -48,7 +48,7 @@ $(function(){
     $('.btnLPA1').on('click', function () {
         let currentLP = parseInt($('#labelLP1').text())
         let plusofmin = parseInt($('#txtLP1').val())
-        
+
         if (isFinite(plusofmin)){
             let resultaat = currentLP + plusofmin
             if (resultaat < 0){
