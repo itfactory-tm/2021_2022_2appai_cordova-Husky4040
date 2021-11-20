@@ -36,6 +36,10 @@
         <div class="divider"></div>
     </li>
     <li><a href="#!" data-show="tabCardSearch"><i class="fas fa-search"></i>Search a card</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a href="#!" data-show="tabFavoriteCard"><i class="fas fa-star"></i>Favorite Cards</a></li>
 </ul>
 
 <div class="container">
@@ -113,8 +117,21 @@
         <p id="pLvl"></p>
         <h6>Prijs</h6>
         <p id="pPrijs"></p>
+        <div class="center-align">
+            <a class="waves-effect waves-light btn-small btnFavorite"><i class="fas fa-star"></i>Voeg toe aan favorieten</a>
+        </div>
     </div>
 
+    <div class="row cooleDiv spa" id="tabFavoriteCard">
+        <div class="col s12">
+            <ul class="collection" id="favoriteCollection">
+                <li class="collection-item avatar">
+                    <a class="waves-effect waves-light btn-small btnDeleteFav"><i class="fas fa-star"></i>verwijder</a>
+                    <img id="change-favImage" src="" alt="Image here" />
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <script src="js/jquery.3.5.1min.js"></script>
 <script src="js/materialize.1.0.0.min.js"></script>

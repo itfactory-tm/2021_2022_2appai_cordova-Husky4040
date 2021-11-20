@@ -2,6 +2,7 @@ $(function(){
     document.addEventListener("deviceready", onDeviceReady, false);
     const cardSearch = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
     const randomCard = 'https://db.ygoprodeck.com/api/v7/randomcard.php'
+
     $('.sidenav').sidenav();
 
     $('.sidenav a').click(function (){
@@ -9,6 +10,7 @@ $(function(){
         $('#' + $(this).data('show')).css('display', 'block');
         $('.sidenav').sidenav('close');
     });
+
 
     $('.dobbelsteen').on('click', function () {
         let randomGetal = Math.floor(Math.random() * 6) + 1
@@ -200,8 +202,51 @@ $(function(){
             }
         })
     })
+    $('.btnFavorite').click(function (){
+        let srcImage = $('#change-image').attr('src')
+        generateFavNumber(srcImage)
+        console.clear()
+        for ( let i = 0, len = localStorage.length; i < len; ++i ) {
+            console.log( localStorage.getItem( localStorage.key( i ) ) );
+        }
+    })
+
+    $('ul').on('click', '.btnDeleteFav', function(){
+        let gewilde_value = $(this).attr('value-fav')
+        for(let i=0, len=localStorage.length; i<len; i++) {
+            let key = localStorage.key(i);
+            let value = localStorage[key];
+            if(value === gewilde_value)
+                localStorage.removeItem(key)
+        }
+        refreshfav()
+    })
 });
+
+function generateFavNumber(image) {
+    let randomFavNumber = Math.random();
+    if (localStorage.getItem("favoriteImg" + randomFavNumber) === null) {
+        localStorage.setItem("favoriteImg" + randomFavNumber, image)
+    }
+    else {
+        generateFavNumber()
+    }
+    refreshfav()
+}
+
+function refreshfav() {
+    $('#favoriteCollection').empty();
+    for ( let i = 0, len = localStorage.length; i < len; ++i ) {
+        console.log( localStorage.getItem( localStorage.key( i ) ) );
+        $('ul.collection').append($('<li class="avatar"></li>')
+            .append($('<img id="change-favImage"  alt="Image here" />')
+                .attr('src', localStorage.getItem(localStorage.key( i )))))
+            .append($('<a class="waves-effect waves-light btn-small btnDeleteFav"><i class="far fa-star"></i>verwijder</a>')
+                .attr('value-fav', localStorage.getItem(localStorage.key( i ))))
+    }
+}
 
 function onDeviceReady() {
     console.log('Device is ready');
+    refreshfav()
 };
